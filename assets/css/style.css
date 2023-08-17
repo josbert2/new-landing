@@ -44,7 +44,7 @@
 }
 .landing-container .mkp-medium {
   font-family: markpro-medium, sans-serif;
-  font-weight: 900;
+
 }
 .landing-container .FontsFree-Net-AlbraMedium {
   font-family: FontsFree-Net-AlbraMedium, sans-serif;
@@ -68,3 +68,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .hidden-tw {
+      display: none
+  }
+  @variants responsive {
+      .hidden-tw {
+          display: none
+      }
+  }
+}
+@media (min-width: 1124px){
+  .figure-text-calc {
+      font-size: calc((14.5vw - 4.5rem) / 7);
+  }
+}
+.img-banners{
+  width: 532px;
+}
+
+.padding-grid{
+  padding: 133px 33px;
+  padding-top: 0;
+}
